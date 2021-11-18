@@ -1,0 +1,19 @@
+print("binary sreach")
+
+import array as arr
+c=arr.array('d',[])
+n=int(input("Enter the students count:"))
+print("Enter the %i students roll no in sorted order:"%(n))
+c=list(map(int,input().split()))
+print("students roll no:",c)
+x=int(input("Enter the roll no which to be serach: "))
+l=0
+h=n-1
+for i in range(l<=h):
+     m=(l+h)//2
+     if(x==c[m]):
+          flag=1
+          print("Roll number %iattend traning program"%(x))
+     else:
+          print("Roll number %i not attend traning program"%(x))
+          
